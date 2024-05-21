@@ -44,18 +44,18 @@
         <div class="container pt-5">
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    <button style="font-size: 14px; color: #000" class="nav-link active fw-bold" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                         type="button" role="tab" aria-controls="nav-home" aria-selected="true">Student Profile</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                    <button style="font-size: 14px; color: #000" class="nav-link fw-bold" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Update Details</button>
+                    <button style="font-size: 14px; color: #000" class="nav-link fw-bold" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Change Password</button>
                 </div>
             </nav>
-
-            <!-- ** Student Profile -->
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <!-- ** Student Profile -->
+                <div class="tab-pane fade show active mb-5" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
                     <!-- ** Student Info -->
                     <div class="container pt-5">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -329,14 +329,89 @@
                     </div>
                 </div>
 
+                <!-- ** Update Details -->
+                <div class="tab-pane fade mb-5" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                    tabindex="0">
+                    <div class="container mt-5 p-4 border rounded-1">
+                        <h5 class="mb-5"><b>Update Account Details</b></h5>
+    
+                        <div class="mb-3">
+                            <form class="row g-2">
+                                <div class="col-12">
+                                    <label style="font-size: 14px;" for="" class="form-label p-0 m-0 fw-bold">Emergency
+                                        Contact Name *</label>
+                                    <input style="line-height: 2;" type="text" placeholder="Emergency Contact Name"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="font-size: 14px;" for="" class="form-label p-0 m-0 fw-bold">Emergency
+                                        Contact Mobile *</label>
+                                    <input style="line-height: 2;" type="text" placeholder="Emergency Contact Mobile"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="font-size: 14px;" for="" class="form-label p-0 m-0 fw-bold">Emergency
+                                        Contact Email *</label>
+                                    <input style="line-height: 2;" type="text" placeholder="Emergency Contact Email"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-12">
+                                    <label style="font-size: 14px;" for="" class="form-label p-0 m-0 fw-bold">Emergency
+                                        Contact Address *</label>
+                                    <input style="line-height: 2;" type="text" placeholder="Emergency Contact Address"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="font-size: 14px;" for="" class="form-label p-0 m-0 fw-bold">Alternative
+                                        Email</label>
+                                    <input style="line-height: 2;" type="text" placeholder="Alternative Email"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="font-size: 14px;" for="" class="form-label p-0 m-0 fw-bold">Emergency
+                                        Contact Email *</label>
+                                    <input style="line-height: 2;" type="text" placeholder="Emergency Contact Email"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-12 text-center pt-4">
+                                    <button type="submit" class="btn btn-primary px-5 py-2 rounded-1">Update
+                                        Information</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ** Update Password -->
+                <div class="tab-pane fade mb-5" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                    tabindex="0">
+                    <div class="container p-4 border rounded-1">
+                        <h5 class="mb-5"><b>Change Password</b></h5>
+    
+                        <div class="mb-3">
+                            <form class="row g-2">
+                                <div class="col-12">
+                                    <input style="line-height: 2;" type="password" placeholder=""
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-12">
+                                    <input style="line-height: 2;" type="password" placeholder="New Password"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-12">
+                                    <input style="line-height: 2;" type="password" placeholder="Confirm new password"
+                                        class="form-control" id="">
+                                </div>
+                                <div class="col-12 text-center pt-4">
+                                    <button type="submit" class="btn btn-primary px-3 rounded-1">Change
+                                        Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
         </div>
-
-        </div>
-
 
     </section>
 
